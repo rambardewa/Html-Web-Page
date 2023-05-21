@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    color: rgb(4, 4, 78);
+}
+body{
+  width: 90%;
+  margin: 0 auto;
+}
+.HeaderContainer{
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem;
+  background-color: rgb(88, 197, 135);
+}
+.Head{
+  flex: 1;
+}
+.LogoContainer i{
+  font-size: 3rem;
+}
+.LogoContainer{
+  font-size: 2.5rem;
+}
+.NavBar a{
+  display: inline-block;
+  padding:  0 1rem;
+  text-decoration: none;
+  font-size: 1rem ;
+  font-weight: bold;
+}
+.NavContainer .Login{
+  border: 3px solid rgb(4, 4, 78);
+  padding: 1rem 2rem;
+  background-color: rgb(88, 197, 135);
+  border-radius: 3rem;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+/* Head Content */
+.HeaderContent{
+  background-color:rgb(88, 197, 135); 
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 4rem;
+}
+.hc{
+  flex: 1;
+  padding: 1rem;
+}
+
+.hc p,.hc h1{
+  text-align: left;
+}
+.head1 p{
+  font-size: 1.3rem;
+}
+.head1 h1{
+  font-size: 2rem;
+}
+
+/* footoer */
+.FooterContainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.Foot{
+  flex:1;
+}
+.Foot ul {
+  list-style-type: none;
+  
+}
+.Foot h3, .Foot .foot-para{
+  color: gray;
+}
+.Foot ul li {
+  padding: 1rem 0 ;
+  color: gray !important;
+}
+
+.LogoContainerFooter p{
+  font-size: 2.5rem;
+}
+.LogoContainerFooter .hiring{
+  border: none;
+  padding: 0.5rem;
+  background-color: rgb(88, 197, 135);
+  border-radius: 4rem;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+/* Numbers */
+.NumbersContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 4rem 4rem 4rem 0;
+}
+.Numbers{
+  flex: 1;
+  padding: 1rem;
+}
+.Numbers1{
+  text-align: center;
+}
+.Numbers2{
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.Numb{
+  flex: 1;
+}
+.big-para{
+  font-size: 2rem;
+}
+.bigNumb-para{
+  font-size: 3rem;
+}
+/* Story */
+.StoryContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 4rem;
+  background-color:rgb(4, 4, 78) ;
+}
+.StoryContainer p{
+  color: white;
+  padding: 1rem 6rem;
+}
+/* Photo Story */
+
+.StoryPhotoContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 6rem;
+}
+.Photo{
+  flex: 1;
+}
+
+.Photo img{
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 2rem !important;
+}
+.Photo p{
+  padding-left: 5rem;
+  padding-top: 1rem;
+}
+/* Small Photo */
+
+
+.SmallPhotoContainer{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 6rem;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.Small-Image{
+  display: flex;
+}
+.SmallPhotoContainer img{
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+.Small-Para{
+  display: flex;
+  flex-direction: column;
+}
+.Small-Para p{
+  padding: 0.5rem;
+}
+
+
+.Text{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.text{
+  flex: 1;
+
+}
+.RightText p{
+  color: white;
+}
+
+/* Website */
+
+.website{
+  width: 70%;
+  margin: 2rem auto;
+  background-color:rgb(4, 4, 78) ;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.website .Startnow{
+  border: 3px solid rgb(4, 4, 78);
+  padding: 1rem 2rem;
+  background-color: rgb(88, 197, 135);
+  border-radius: 3rem;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+input{
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+}
+
+
+@media only screen and (max-width:600px) {
+  .HeaderContainer{
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+  .Head{
+    padding: 1rem;
+  }
+  .Head .Login{
+    padding: 10px 20px;
+  }
+  .HeaderContent{
+    padding: 2rem;
+  }
+  .head1 h1{
+    font-size: 1.5rem;
+  }
+  .Numb{
+    text-align: center;
+  }
+  .FooterContainer{
+    flex-direction: column;
+    text-align: center;
+  }
+}
